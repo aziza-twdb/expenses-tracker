@@ -1,0 +1,19 @@
+.container{
+    text-align: center;
+    margin: auto;
+    padding:40px;
+  }
+  p{
+    font-family: Georgia, serif;
+  }
+  
+  h1{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 5rem;
+    text-shadow: 5px 0 #232931;
+    color: #753c44
+  }
+  footer{
+    text-align: center;
+  
+  }
