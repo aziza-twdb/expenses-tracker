@@ -22,7 +22,7 @@
   table {
     border:1px solid #b3adad;
     border-collapse:collapse;
-    width: 30%;
+    width: 41em;
   }
   table th {
     border:1px solid #b3adad;
@@ -30,6 +30,7 @@
     background: #753c44;
     color: #ffffff;
   }
+ 
   table td {
     border:1px solid #b3adad;
     text-align:center;
@@ -37,6 +38,20 @@
     background: #ffffff;
     color: #313030;
   }
+  button, button:visited {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #000;
+    font-weight: 600;
+    color: #fff;
+    margin: 5px;
+    padding:8px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  input{
+    padding:9px 11px;
+  }
+
   footer{
     text-align: center;
   
