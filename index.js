@@ -1,20 +1,17 @@
-const titleInput = document.getElementsByName("title")[0]; 
-const amountInput = document.getElementsByName("amount")[0]; 
-const dateInput = document.getElementsByName("date")[0];
-const submit = document.querySelectorAll('button')
+const submit = document.querySelector("#submit")
 
 let dataInput = document.querySelectorAll('input');
 let addRow = document.querySelectorAll('tr')[1];
-  
-
-for (let i = 0; i < dataInput.length; ++i) {
+let table = document.querySelector("#mid-rowsss")
+ 
+submit.addEventListener('click',function() {
+    let titleInput = document.querySelectorAll("input")[0]
+    let amountInput = document.querySelectorAll("input")[1]
+    let date =  document.querySelectorAll("input")[2]
+    addRow.innerHTML = `
+    <th>${titleInput.value}</th>
+    <th>${date.value}</th>
+    <th>${amountInput.value}</th>
+    `
+})
     
-    addRow[i].addEventListener('click', function(e) {
-      alert('youve sublitted')
-     
-    })
-
-
-}
-
-
