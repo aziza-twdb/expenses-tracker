@@ -1,7 +1,8 @@
 const submit = document.querySelector("#submit")
 var input = document.querySelectorAll('input')
-let addRow = document.querySelectorAll('tr');
- 
+var addRow = document.querySelectorAll('tr');
+var table = document.getElementById("#datainject")
+
 submit.addEventListener('click',function() {
     var midRow = document.createElement('tr')
     midRow.classList.add('middle-rows')
@@ -12,11 +13,13 @@ submit.addEventListener('click',function() {
     `
     addRow[0].insertAdjacentElement("afterend", midRow)
 
+
     input[0].value= ""
     input[1].value= ""
     input[2].value= ""
 
     
+
 })
 
 
