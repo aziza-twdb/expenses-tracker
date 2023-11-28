@@ -14,26 +14,35 @@
     <div class="container input-data">
         <h2>Input the data from the expense:</h2>
         <form action=" method="get">
-            <input type="text" name ="title" placeholder="Title"> 
-            <input type="number" name ="amount" placeholder="Amount"> 
-            <input type="text" name ="date" placeholder="Date (optional)"> 
-            <input  id="submit" type="button" name ="amount" placeholder="Amount" value="Submit" onclick=""> 
-        </form>
-        
+            <input type="text" id="expenseTitle" name ="title" placeholder="Title"> 
+            <input type="number" id="expenseAmount" name ="amount" placeholder="Amount"> 
+            <input type="text" id="expenseDate"  name ="date" placeholder="Date (optional)"> 
+            <input   type="button" id="submit" name ="amount" placeholder="Amount" value="Submit" onclick="test()"> 
+        </form>    
     </div>
-    <div class="data-below">
-        <table id="datainject">
-            <tr class="top-row">
-                <th>Title</th>
-                <th>Amount</th>
-                <th>Date<em> (opitional)</em></th>
-            </tr>
-            <tr class="bottom-row">
-                <th>---</th>
-                <th>---</th>
-                <th>Final Amount</th>
-            </tr>
-        </table>
+   <!-- <section  class="top-row">
+        <ul>
+            <li>Title</li>
+            <li>Date<em> (opitional)</em></li>
+            <li>Amount</li>
+            
+        </ul>
+    </section>--> 
+    
+        <div class="title">
+            <p>title</p>
+            <ul id="title"></ul>
+        </div>
+        <div class="amount">
+            <p>$$$</p>
+            <ul id="amount"></ul>
+        </div>
+        <section class="bottom-row" id="total">
+            <p>Total amount:</p>
+        </section>
+   
+
+       
 
 
     </div>
@@ -41,6 +50,38 @@
         <p>Back to <a href="https://azizaobryant.com">azizaobryant.com</a></p>
  </footer>
 </body>
-<script src="index.js"></script>
+<script>
+   var submit = document.getElementById("submit"); 
+   submit.addEventListener('click', test);
+
+
+function test() {
+    alert('ive been clicked')
+        var titleInput = document.getElementById("expenseTitle").value;
+    var amountInput = document.getElementById("expenseAmount").value;
+    var expenseList = document.getElementById("expenseList").value;
+}
+
+function injectNum() {
+
+
+
+
+    var total = document.getElementById("total");
+    var title = document.getElementById("title");
+    var amount = document.getElementById("amount");
+    var makeList = document.createElement("li");
+
+    makeList.innerText = titleInput;
+
+    let listItem1 = title.appendChild(makeList);
+ 
+}     
+ 
+ 
+  
+</script>
 </html>
+
+
 

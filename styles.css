@@ -19,29 +19,21 @@ h1{
   text-shadow: 5px 0 #232931;
   color: #753c44
 }
-table {
-  border:1px solid #b3adad;
-  border-collapse:collapse;
-  width: 41em;
-}
-th {
+
+.top-row {
   border:1px solid #b3adad;
   padding:15px;
   background: #753c44;
   color: #ffffff;
 }
 
-table td {
+
+.title, .amount{
+  Width: 20rem;
   border:1px solid #b3adad;
   text-align:center;
   padding:21px;
-  background: #ffffff;
-  color: #313030;
-}
-
-
-td.middle-rows{
-background-color: #fff;
+background-color: #ffe600;
 color: #000;
 }
 #submit {
