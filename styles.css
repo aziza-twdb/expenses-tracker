@@ -1,16 +1,23 @@
+
 .container{
+  max-width: 725px;
   text-align: center;
   margin: auto;
   padding:40px;
 }
-.data-below{
+section{ 
+border:1px solid #b3adad;
   display: flex;
   justify-content: center;
 }
 p{
   font-family: Georgia, serif;
 }
-
+li{
+  list-style: none;
+  color: #000;
+  text-align: left;
+}
 h1{
   margin-top: 80px;
   text-align: center;
@@ -19,28 +26,28 @@ h1{
   text-shadow: 5px 0 #232931;
   color: #753c44
 }
-table {
-  border:1px solid #b3adad;
-  border-collapse:collapse;
-  width: 41em;
+.table{
+  color: #ffffff;
+  display: inline-block;
+  text-align:center;
+  width: 175px;
+
 }
-th {
-  border:1px solid #b3adad;
-  padding:15px;
+.header{
+  
   background: #753c44;
   color: #ffffff;
-}
-
-table td {
-  border:1px solid #b3adad;
   text-align:center;
-  padding:21px;
-  background: #ffffff;
+  padding:7px 15px;
+}
+.top-row{ border:1px solid #b3adad;
+    background: #ffffff;
   color: #313030;
+  width: 41em;
 }
 
 
-td.middle-rows{
+.middle-rows{
 background-color: #fff;
 color: #000;
 }

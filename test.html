@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #expenses {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Expense Calculator</h1>
+    
+    <label for="expenseTitle">Expense Title:</label>
+    <input type="text" id="expenseTitle" placeholder="Enter expense title">
+
+    <label for="expenseAmount">Expense Amount:</label>
+    <input type="number" id="expenseAmount" placeholder="Enter expense amount">
+
+    <button onclick="addExpense()">Add Expense</button>
+
+    <div id="expenses">
+        <h2>Expense List</h2>
+        <ul id="expenseList"></ul>
+        <p>Total Expenses: $<span id="totalExpenses">0.00</span></p>
+    </div>
+
+    <script>
+        function addExpense() {
+            var titleInput = document.getElementById("expenseTitle");
+            var amountInput = document.getElementById("expenseAmount");
+            var expenseList = document.getElementById("expenseList");
+            var totalExpenses = document.getElementById("totalExpenses");
+
+            var title = titleInput.value;
+            var amount = parseFloat(amountInput.value);
+
+            if (title.trim() === "" || isNaN(amount) || amount <= 0) {
+                alert("Please enter a valid expense title and amount.");
+                return;
+            }
+
+            var listItem = document.createElement("li");
+            listItem.textContent = title + ": $" + amount.toFixed(2);
+            expenseList.appendChild(listItem);
+
+            // Update total expenses
+            var currentTotal = parseFloat(totalExpenses.textContent);
+            totalExpenses.textContent = (currentTotal + amount).toFixed(2);
+
+            // Clear input fields
+            titleInput.value = "";
+            amountInput.value = "";
+        }
+    </script>
+</body>
+</html>
+
+
+document.getElementById("title")
+document.getElementById("number") 
+document.getElementById("date")
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <h1>Expense Tracker</h1>
+    <div class="container" id="input-data">
+        <h2>Input the data from the expense:</h2>
+        <form>
+        <input id="input1" type="text" name ="title" placeholder="Title"> 
+            <input id="input2" required="" type="number" name ="amount" placeholder="Amount"> 
+            <input id="input3" type="date" name ="date" placeholder="Date (optional)"> 
+            <input  id="submit" type="button" name ="amount" placeholder="Amount" value="Submit" onclick="injectNumb()"> 
+        </form>
+        
+    </div>
+    <main class="container">
+            <section class="header">
+                <div class="table">
+                    <h3>Title</h3>
+                </div>
+                <div class="table">
+                    <h3>Amount</h3>
+                </div>
+                <div class="table">
+                    <h3>Date<em> (optional)</em></h3>
+                </div>
+            </section>
+            <section>
+                <div class="table">
+                    <ul id="title">
+
+                    </ul>
+                </div>
+                <div class="table">
+                    <ul id="number">
+
+                    </ul> 
+                    
+                </div>
+                <div class="table">
+                    <ul id="date">
+
+                    </ul>
+                </div>
+            </section>
+            <section  class="header">
+                <div class="table"></div>
+                <div class="table"> <h3>Final Amount</h3></div>
+                <div class="table"></div>
+            </section>
+        </main>
+
+
+    
+ <footer>
+        <p>Back to <a href="https://azizaobryant.com">azizaobryant.com</a></p>
+ </footer>
+</body>
+<script src="index.js"></script>
+</html>
+
+
+.container{
+    max-width: 725px;
+    text-align: center;
+    margin: auto;
+    padding:40px;
+  }
+  section{ 
+  border:1px solid #b3adad;
+    display: flex;
+    justify-content: center;
+  }
+  p{
+    font-family: Georgia, serif;
+  }
+  li{
+    list-style: none;
+    color: #000;
+    text-align: left;
+  }
+  h1{
+    margin-top: 80px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 5rem;
+    text-shadow: 5px 0 #232931;
+    color: #753c44
+  }
+  .table{
+    color: #ffffff;
+    display: inline-block;
+    text-align:center;
+    padding:21px;
+    width: 175px;
+  
+  }
+  .header{
+    
+    background: #753c44;
+    color: #ffffff;
+    text-align:center;
+    padding:7px 15px;
+  }
+  .top-row{ border:1px solid #b3adad;
+      background: #ffffff;
+    color: #313030;
+    width: 41em;
+  }
+  
+  
+  .middle-rows{
+  background-color: #fff;
+  color: #000;
+  }
+  #submit {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #000;
+    font-weight: 600;
+    color: #fff;
+    margin: 5px;
+    padding: 14px 13px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  #submit:hover{
+  background-color: #444444;
+  } 
+  
+  input{
+    padding:9px 11px;
+  }
+  
+  footer{
+    text-align: center;
+  
+  }
+
+  const submit = document.querySelector("#submit");
+var table = document.getElementById("#datainject");
+
+let input1 = document.getElementById("input1");
+let input2 = document.getElementById("input2");
+let input3 = document.getElementById("input3");
+x
+
+function injectNumb() {
+
+  let l1 = document.createElement("li");
+  bullet.innerHTML = input1.value
+  document.getElementById("title").appendChild(l1)
+   input1.value = ""
+
+   let l2 = document.createElement("li");
+   l2.innerHTML = input2.value
+   document.getElementById("number").appendChild(l2);
+   input2.value = ""
+
+   let l3 = document.createElement("li")
+   l3.innerHTML = input3.value
+  document.getElementById("date").appendChild(l3)
+   input3.value = ""
+
+
+}     
+  injectNumb()
+  submit.addEventListener('click', injectNum);
+  
+  
