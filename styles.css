@@ -27,10 +27,14 @@ h1{
   color: #753c44
 }
 .table{
-  color: #ffffff;
+  color: #fff;
   display: inline-block;
   text-align:center;
   width: 175px;
+
+}
+.error{
+  border: red solid 2px;
 
 }
 .header{
@@ -45,7 +49,9 @@ h1{
   color: #313030;
   width: 41em;
 }
-
+.data{
+  color: #000;
+}
 
 .middle-rows{
 background-color: #fff;
