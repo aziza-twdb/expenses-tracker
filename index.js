@@ -9,7 +9,7 @@ submit.addEventListener('click', function() {
     let input3 = document.getElementById("input3")
 
         if (input2.value == "" || input1.value == "" ) {
-            alert("Please fill out required feilds!")
+            alert("Please fill out required fields!")
             input1.classList.add("error")
             input2.classList.add("error")
         } else {
