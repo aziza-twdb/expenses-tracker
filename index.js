@@ -31,7 +31,7 @@ submit.addEventListener('click', function() {
 
         amount +=  parseFloat(input[1].value)
         input[1].value = amount;
-        final.textContent = amount;
+        final.textContent = "$" + amount;
 
         input[0].value = "";
         input[1].value = "";
