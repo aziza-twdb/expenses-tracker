@@ -1,69 +1,101 @@
-.container{
-    text-align: center;
-    margin: auto;
-    padding:40px;
-  }
-.data-below{
-    display: flex;
-    justify-content: center;
-  }
-p{
-    font-family: Georgia, serif;
-  }
-  
-h1{
-    margin-top: 80px;
-    text-align: center;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 5rem;
-    text-shadow: 5px 0 #232931;
-    color: #753c44
-  }
-table {
-    border:1px solid #b3adad;
-    border-collapse:collapse;
-    width: 41em;
-  }
-th {
-    border:1px solid #b3adad;
-    padding:15px;
-    background: #753c44;
-    color: #ffffff;
-  }
- 
-table td {
-    border:1px solid #b3adad;
-    text-align:center;
-    padding:21px;
-    background: #ffffff;
-    color: #313030;
-  }
 
+.container{
+  max-width: 725px;
+  text-align: center;
+  margin: auto;
+  padding:40px;
+}
+section{ 
+border:1px solid #b3adad;
+  display: flex;
+  justify-content: center;
+}
+p{
+  font-family: Georgia, serif;
+}
+li{
+  padding-bottom: 5px;
+  list-style: none;
+  color: #000;
+  text-align: left;
+}
+h1{
+  margin-top: 80px;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 5rem;
+  text-shadow: 5px 0 #232931;
+  color: #753c44
+}
+.table{
+  color: #fff;
+  display: inline-block;
+  text-align:center;
+  width: 175px;
+}
+ul{
+  padding: 15px ;
+}
+.data{
+  width: 175px;
+
+}
+.error{
+  border: red solid 2px;
+
+}
+.header{
   
-td.middle-rows{
-  background-color: #fff;
+  background: #753c44;
+  color: #ffffff;
+  text-align:center;
+  padding:7px 15px;
+}
+.top-row{ border:1px solid #b3adad;
+    background: #ffffff;
+  color: #313030;
+  width: 41em;
+}
+.data{
   color: #000;
 }
+
+.middle-rows{
+background-color: #fff;
+color: #000;
+}
 #submit {
-    font-family: 'Press Start 2P', cursive;
-    background-color: #000;
-    font-weight: 600;
-    color: #fff;
-    margin: 5px;
-    padding: 14px 13px;
-    border-radius: 2px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
- #submit:hover{
-  background-color: #444444;
- } 
+  font-family: 'Press Start 2P', cursive;
+  background-color: #000;
+  font-weight: 600;
+  color: #fff;
+  margin: 5px;
+  padding: 14px 13px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+#submit:hover{
+background-color: #444444;
+} 
 
 input{
-    padding:9px 11px;
-  }
+  padding:9px 11px;
+  border: solid 1px #ccc;
+}
 
 footer{
-    text-align: center;
+  text-align: center;
+
+}
+@media (max-width: 600px) {
   
+  h1{
+    font-size: 2rem;
   }
+
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+}
