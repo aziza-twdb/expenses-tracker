@@ -15,6 +15,7 @@ submit.addEventListener('click', function() {
             alert("Please fill out required fields!")
             input[1].classList.add("error")
             input[0].classList.add("error")
+            break
         } else {
             console.warn("Submitted: " + input[0].value  + " for $" + input[1].value  + " on " + input[2].value  + " ")
             input[1].classList.remove("error")
